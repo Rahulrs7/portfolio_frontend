@@ -16,7 +16,9 @@
   width: 400px;
   margin: 10px auto;
 }
-
+.col-md-4{
+  padding-top: 30px;
+}
 .project h2 {
   font-weight: bold;
   color: var(--primary-color);

@@ -11,34 +11,18 @@ import "./App.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "./components/footer";
-import { useState,useEffect } from "react";
-import Loading from "./components/Loading";
+// import { useState,useEffect } from "react";
+// import Loading from "./components/Loading";
 
 function App() {
   const [theme] = useTheme();
-  const [loading, setLoading] = useState(true);
-  const [percentage, setPercentage] = useState(0); // State to track loading percentage
-
-  useEffect(() => {
-    const loadData = async () => {
-      for (let i = 0; i <= 100; i++) {
-        setPercentage(i);
-        await new Promise(resolve => setTimeout(resolve, 50)); // Adjust time as needed
-      }
-      setLoading(false);
-    };
-
-    loadData();
-  }, []);
+ 
   
   return (
     <>
       <div className="background">
         <div id={theme}>
-          <ToastContainer />
-          {loading ? ( // Conditional rendering based on loading state
-            <Loading percentage={percentage} />
-          ):(
+          <ToastContainer />          
             <>
           <Layout />
           <AnimatedBackground />
@@ -51,7 +35,6 @@ function App() {
           </div>
           <Footer />
           </>
-          )}
         </div>
         <ScrollToTop
           smooth

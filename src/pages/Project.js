@@ -3,6 +3,9 @@ import "./Project.css";
 import img4 from "../assets/images/img4.jpg";
 import img5 from "../assets/images/img5.jpg";
 import image from "../assets/images/image.jpg";
+import img6 from "../assets/images/img6.png"
+import img7 from "../assets/images/img7.png"
+import img8 from "../assets/images/img8.png"
 
 const projectsData = [
   {
@@ -22,6 +25,24 @@ const projectsData = [
     imgSrc: image,
     badges: ["React", "Nodejs","Mongodb"],
     link: "https://campinfo.onrender.com/campgrounds",
+  },
+  {
+    title: "QuickDel",
+    imgSrc: img7,
+    badges: ["React", "Nodejs","Mongodb"],
+    link: "https://quick-del-topaz.vercel.app/",
+  },
+  {
+    title: "DreamPlanner",
+    imgSrc: img6,
+    badges: ["React", "Nodejs","Mongodb"],
+    link: "https://dreamplanner-frontend.vercel.app/",
+  },
+  {
+    title: "Vmegle",
+    imgSrc: img8,
+    badges: ["Nextjs", "Nodejs"],
+    link: "https://vmegle-frontend.vercel.app/",
   },
   // Additional projects can be added here...
 ];
